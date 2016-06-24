@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RadioGroupTabDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--HomeActivity-->
+    <string name="home_home">首页</string>
+    <string name="home_find">费用查缴</string>
+    <string name="home_search">服务申请</string>
+    <string name="home_profile">我</string>
+
+
+</resources>
