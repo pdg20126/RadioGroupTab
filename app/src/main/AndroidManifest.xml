@@ -9,6 +9,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".HomeActivity"
+            android:launchMode="singleTop"
             android:label="" >
 
         </activity>

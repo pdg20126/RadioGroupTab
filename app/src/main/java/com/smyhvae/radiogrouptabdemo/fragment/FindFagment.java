@@ -13,17 +13,17 @@ import android.widget.TextView;
 import com.smyhvae.radiogrouptabdemo.R;
 
 import java.util.TimerTask;
-
-
 /**
  * Created by smyh on 2015/4/28.
  */
 public class FindFagment extends Fragment {
+    private View view;
     TextView tv;
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_find,null);
-
+         view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_find,null);
         return view;
     }
 

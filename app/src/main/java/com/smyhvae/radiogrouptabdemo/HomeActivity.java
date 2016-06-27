@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v7.widget.Toolbar;
 import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
@@ -37,6 +38,7 @@ public class HomeActivity extends FragmentActivity {
         setContentView(R.layout.activity_home);
         initView();
         initData();
+        Toolbar t = (Toolbar) findViewById(R.id.toolbar);
     }
 
     protected void initView() {
@@ -101,6 +103,7 @@ public class HomeActivity extends FragmentActivity {
             switch (i) {
                 case 0://首页
                     fragment = new HomeFagment();
+
                     break;
                 case 1://发现
                     fragment = new FindFagment();
