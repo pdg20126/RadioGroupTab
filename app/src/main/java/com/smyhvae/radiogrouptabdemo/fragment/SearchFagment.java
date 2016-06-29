@@ -13,7 +13,7 @@ import com.smyhvae.radiogrouptabdemo.R;
 public class SearchFagment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_home,null);
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_search,null);
         return view;
     }
 

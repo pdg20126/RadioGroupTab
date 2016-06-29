@@ -5,7 +5,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout">
+        android:id="@+id/relativeLayout"
+        android:background="@color/freshgreen">
 <!--     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,7 +21,8 @@
             android:text="费用查缴"
             android:layout_centerInParent="true"
             android:layout_centerVertical="true"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+           />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -29,24 +31,6 @@
         android:layout_alignTop="@+id/relativeLayout2"
         android:layout_centerHorizontal="true">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/login_icon_qq"
-            android:id="@+id/imageView"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="42dp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/login_icon_qq"
-            android:id="@+id/imageView1"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="42dp" />
-
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -54,22 +38,23 @@
         android:id="@+id/relativeLayout2"
         android:layout_marginTop="89dp"
         android:layout_below="@+id/relativeLayout"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:onClick="pay">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/login_icon_qq"
+            android:background="@drawable/car"
             android:id="@+id/imageView3"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="42dp" />
+            android:layout_alignParentStart="true" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="停车卡续费"
             android:textSize="20sp"
             android:layout_below="@+id/imageView3"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+           />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -80,18 +65,27 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/login_icon_qq"
+            android:background="@drawable/a1"
             android:id="@+id/imageView2"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="42dp" />
-        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="101dp" />
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="预缴物业费"
-            android:textSize="20sp"
-            android:layout_below="@+id/imageView2"
-            android:layout_alignParentStart="true" />
+            android:id="@+id/relativeLayout5"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wuyepay"
+                android:id="@+id/imageView5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -103,40 +97,19 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/login_icon_qq"
+            android:background="@drawable/searchhistory"
             android:id="@+id/imageView4"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="42dp" />
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/textView2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="欠费记录查询"
             android:textSize="20sp"
             android:layout_below="@+id/imageView4"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout5"
-        android:layout_alignTop="@+id/relativeLayout4"
-        android:layout_alignStart="@+id/linearLayout2">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/login_icon_qq"
-            android:id="@+id/imageView5"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="42dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="缴费历史查询"
-            android:textSize="20sp"
-            android:layout_below="@+id/imageView5"
-            android:layout_alignParentStart="true" />
+            android:id="@+id/textView2" />
     </RelativeLayout>
 
     <TextView
@@ -145,6 +118,33 @@
         android:text="欠费缴纳"
         android:textSize="20sp"
         android:layout_above="@+id/relativeLayout4"
-        android:layout_alignStart="@+id/linearLayout2" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search"
+        android:id="@+id/imageView1"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预缴物业费"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="缴费历史查询"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/relativeLayout4"
+        android:layout_alignStart="@+id/textView"
+        android:id="@+id/textView3" />
 
 </RelativeLayout>

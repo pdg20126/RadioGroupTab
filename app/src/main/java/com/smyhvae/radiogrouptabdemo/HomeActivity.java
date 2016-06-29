@@ -5,10 +5,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.smyhvae.radiogrouptabdemo.fragment.FindFagment;
 import com.smyhvae.radiogrouptabdemo.fragment.HomeFagment;
@@ -103,7 +105,6 @@ public class HomeActivity extends FragmentActivity {
             switch (i) {
                 case 0://首页
                     fragment = new HomeFagment();
-
                     break;
                 case 1://发现
                     fragment = new FindFagment();
@@ -127,6 +128,9 @@ public class HomeActivity extends FragmentActivity {
 
     protected void initData() {
 
+    }
+    public void  pay(View v){
+        Toast.makeText(HomeActivity.this, "点击付费", Toast.LENGTH_SHORT).show();
     }
 
 }

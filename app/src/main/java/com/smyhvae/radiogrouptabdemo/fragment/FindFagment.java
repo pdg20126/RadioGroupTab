@@ -24,6 +24,7 @@ public class FindFagment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
          view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_find,null);
+
         return view;
     }
 
@@ -35,11 +36,11 @@ public class FindFagment extends Fragment {
             this.getView().setVisibility(menuVisibile ? View.VISIBLE : View.GONE);
         }
     }
-    class  findbar extends Activity{
+ /*   class  findbar extends Activity{
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             tv= (TextView) findViewById(R.id.toolbartext);
         }
-    }
+    }*/
 }
