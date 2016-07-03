@@ -26,7 +26,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
 /**
  * Created by Administrator on 2016/6/30.
  */
@@ -68,7 +67,7 @@ public class WeatherActivity extends Activity {
         txt_ganmao= (TextView) findViewById(R.id.txt_ganmao);
         txt_fengxiang= (TextView) findViewById(R.id.txt_fengxiang);
         txt_ziwaixian= (TextView) findViewById(R.id.txt_ziwaixian);
-        txt_date2= (TextView) findViewById(R.id.txt_date2);
+/*        txt_date2= (TextView) findViewById(R.id.txt_date2);
         txt_week2= (TextView) findViewById(R.id.txt_week2);
         txt_tempature2= (TextView) findViewById(R.id.txt_tempature2);
         txt_weather2= (TextView) findViewById(R.id.txt_weather2);
@@ -84,7 +83,7 @@ public class WeatherActivity extends Activity {
         txt_week4= (TextView) findViewById(R.id.txt_week4);
         txt_tempature4= (TextView) findViewById(R.id.txt_tempature4);
         txt_weather4= (TextView) findViewById(R.id.txt_weather4);
-        txt_fengxiang4= (TextView) findViewById(R.id.txt_fengxiang4);
+        txt_fengxiang4= (TextView) findViewById(R.id.txt_fengxiang4);*/
 
         openGPSSettings();
     }
@@ -153,7 +152,7 @@ public class WeatherActivity extends Activity {
                     txt_fengxiang.setText(t.getRetData().getToday().getFengxiang()+" "+t.getRetData().getToday().getFengli());
                     txt_ziwaixian.setText(t.getRetData().getToday().getIndex().get(1).getDetails());
 
-                    txt_date2.setText(t.getRetData().getForecast().get(0).getDate());
+         /*           txt_date2.setText(t.getRetData().getForecast().get(0).getDate());
                     txt_week2.setText(t.getRetData().getForecast().get(0).getWeek());
                     txt_tempature2.setText(t.getRetData().getForecast().get(0).getLowtemp()+"~"+t.getRetData().getForecast().get(0).getHightemp());
                     txt_weather2.setText(t.getRetData().getForecast().get(0).getType());
@@ -170,7 +169,7 @@ public class WeatherActivity extends Activity {
                     txt_tempature4.setText(t.getRetData().getForecast().get(2).getLowtemp()+"~"+t.getRetData().getForecast().get(2).getHightemp());
                     txt_weather4.setText(t.getRetData().getForecast().get(2).getType());
                     txt_fengxiang4.setText(t.getRetData().getForecast().get(2).getFengxiang()+" "+t.getRetData().getForecast().get(2).getFengli());
-
+*/
                 }
             }
 

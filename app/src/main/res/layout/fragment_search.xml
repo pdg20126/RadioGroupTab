@@ -19,234 +19,239 @@
             />
     </RelativeLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_weight="1">
-
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout2"
-        android:layout_marginTop="35dp"
-        android:onClick="pay"
-        android:layout_below="@+id/relativeLayout"
-        android:layout_alignParentStart="true">
-        <ImageView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/b1"
-            android:id="@+id/imageView3"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="在线报修"
-            android:textSize="20sp"
-            android:layout_below="@+id/imageView3"
-            android:layout_alignParentStart="true"
-            />
-    </RelativeLayout>
+            android:id="@+id/relativeLayout1"
+            android:onClick="pay"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/relativeLayout5"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l1"
+                android:id="@+id/imageView1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线报修"
+                android:textSize="20sp"
+                android:layout_below="@+id/imageView1"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/relativeLayout3"
         android:onClick="pay"
+        android:layout_weight="1"
         android:layout_alignBottom="@+id/relativeLayout5"
         android:layout_alignParentEnd="true">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/b5"
+            android:background="@drawable/l2"
             android:id="@+id/imageView4"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="雨伞租借"
+            android:text="空调加时"
             android:textSize="20sp"
             android:layout_below="@+id/imageView4"
             android:layout_alignParentStart="true"
             />
     </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout12"
+            android:onClick="pay"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/relativeLayout5"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l3"
+                android:id="@+id/imageView12"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物资放行"
+                android:textSize="20sp"
+                android:layout_below="@+id/imageView12"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_weight="1">
-
-
-    <RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/relativeLayout5"
-    android:onClick="pay"
-    android:layout_below="@+id/relativeLayout2"
-    android:layout_alignStart="@+id/relativeLayout8">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/b4"
-        android:id="@+id/imageView5"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="清洁绿化"
-        android:textSize="20sp"
-        android:layout_below="@+id/imageView5"
-        android:layout_alignParentStart="true"
-        />
-</RelativeLayout>
-    <RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/relativeLayout6"
-    android:onClick="pay"
-    android:layout_below="@+id/relativeLayout2"
-    android:layout_alignParentStart="true">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bb"
-        android:id="@+id/imageView6"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="水牌操作"
-        android:textSize="20sp"
-        android:layout_below="@+id/imageView6"
-        android:layout_alignParentStart="true"
-        />
-</RelativeLayout>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout7"
-        android:onClick="pay"
-        android:layout_alignTop="@+id/relativeLayout8"
-        android:layout_alignParentEnd="true">
-        <ImageView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/b3"
-            android:id="@+id/imageView7"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-        <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/relativeLayout4"
+            android:onClick="pay"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/relativeLayout5"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l5"
+                android:id="@+id/imageView5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水牌制作"
+                android:textSize="20sp"
+                android:layout_below="@+id/imageView5"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="物资放行"
-            android:textSize="20sp"
-            android:layout_below="@+id/imageView7"
-            android:layout_alignParentStart="true"
-            />
-    </RelativeLayout>   <RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/relativeLayout8"
-    android:onClick="pay"
-    android:layout_above="@+id/relativeLayout5"
-    android:layout_centerHorizontal="true">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/b2"
-        android:id="@+id/imageView8"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="空调维修"
-        android:textSize="20sp"
-        android:layout_below="@+id/imageView8"
-        android:layout_alignParentStart="true"
-        />
-</RelativeLayout>
+            android:id="@+id/relativeLayout6"
+            android:onClick="pay"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/relativeLayout5"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l5"
+                android:id="@+id/imageView6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清洁绿化"
+                android:textSize="20sp"
+                android:layout_below="@+id/imageView6"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout7"
+            android:onClick="pay"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/relativeLayout5"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l6"
+                android:id="@+id/imageView7"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="雨伞租借"
+                android:textSize="20sp"
+                android:layout_below="@+id/imageView7"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
     </LinearLayout>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout8"
+            android:onClick="pay"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/relativeLayout5"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l7"
+                android:id="@+id/imageView8"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推车租借"
+                android:textSize="20sp"
+                android:layout_below="@+id/imageView8"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
 
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout9"
-        android:onClick="pay"
-        android:layout_below="@+id/relativeLayout3"
-        android:layout_alignStart="@+id/relativeLayout3">
-        <ImageView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/b9"
-            android:id="@+id/imageView9"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true" />
-        <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/relativeLayout9"
+            android:onClick="pay"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/relativeLayout5"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l8"
+                android:id="@+id/imageView9"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="装修申请"
+                android:textSize="20sp"
+                android:layout_below="@+id/imageView9"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="投诉建议"
-            android:textSize="20sp"
-            android:layout_below="@+id/imageView9"
-            android:layout_alignParentStart="true"
-            />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout10"
-        android:onClick="pay"
-        android:layout_alignBottom="@+id/relativeLayout11"
-        android:layout_alignStart="@+id/relativeLayout5">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/b7"
-            android:id="@+id/imageView10"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="装修申请"
-            android:textSize="20sp"
-            android:layout_below="@+id/imageView10"
-            android:layout_alignParentStart="true"
-            />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout11"
-        android:onClick="pay"
-        android:layout_below="@+id/relativeLayout5"
-        android:layout_alignParentStart="true">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/b6"
-            android:id="@+id/imageView11"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="推车租借"
-            android:textSize="20sp"
-            android:layout_below="@+id/imageView11"
-            android:layout_alignParentStart="true"
-            />
-    </RelativeLayout>
-</LinearLayout>
+            android:id="@+id/relativeLayout10"
+            android:onClick="pay"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/relativeLayout5"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l9"
+                android:id="@+id/imageView10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投诉建议"
+                android:textSize="20sp"
+                android:layout_below="@+id/imageView10"
+                android:layout_alignParentStart="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>
