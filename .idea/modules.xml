@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Estate.iml" filepath="$PROJECT_DIR$/Estate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RadioGroupTab.iml" filepath="$PROJECT_DIR$/RadioGroupTab.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -47,27 +47,29 @@ public class MainActivity extends FatherBarActivity {
     }
     public void login(View view){
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.31.191:8001")
+                .baseUrl("http://192.168.1.90:8080")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        String LoginName = username.getText().toString();
+        final String LoginName = username.getText().toString();
         String Loginpwd = pwd.getText().toString();
-        Toast.makeText(MainActivity.this,LoginName+Loginpwd , Toast.LENGTH_SHORT).show();
         Userinfo user=retrofit.create(Userinfo.class);
-        Call<Userinfo> call = user.finduserinfo(LoginName,Loginpwd);
-        call.enqueue(new Callback<Userinfo>() {
+        Call<User> call = user.finduserinfo(LoginName,Loginpwd);
+        call.enqueue(new Callback<User>() {
             @Override
-            public void onResponse(Call<Userinfo> call, Response<Userinfo> response) {
-                   if(response.body().equals("success")){
+            public void onResponse(Call<User> call, Response<User> response) {
+
+                   if(response.body().equals(LoginName)){
+                       Toast.makeText(MainActivity.this, response.body().toString(), Toast.LENGTH_SHORT).show();
                         i=new Intent(MainActivity.this,HomeActivity.class);
                         startActivity(i);
                     }
             }
             @Override
-            public void onFailure(Call<Userinfo> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
+            public void onFailure(Call<User> call, Throwable t) {
+
+        /*       Toast.makeText(MainActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
                 i=new Intent(MainActivity.this,HomeActivity.class);
-                startActivity(i);
+                startActivity(i);*/
             }
         });
     }
